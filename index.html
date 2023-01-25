@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Michal Ad's personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michal Ad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code_js.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+
+</head>
+<body>
+    <!-- Used for navigating across the site. When pressing a certain button, it will take the user to the relevant sectioon the site -->
+    <div id="navbar">
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#employment">Employment</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="destinations.html"><span>&#9992;</span>My travels</a></li> <!-- Will take the user to My Travels page -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <img id="profile-pic" src="pictures/profile.jfif" alt="Michal Ad">
+    <h1 id="intro">Hi! I'm Michal :)</h1>
+    <h2 id="about">About Me</h2>
+    <div class="left center">
+        <p>Hi all! My name is Michal Ad and I'm excited to have you visiting my personal website. <br>
+            I'm 24 and I'm from Herzeliya, Israel. I'm a 2nd year computer science student at Reichman University.<br> 
+            During my studies, Iv'e learned many programming languages;<br>
+            Java, Python, C, SQL, and recently I've learned HTML, JavaScript, and CSS- as you can see :) <br>
+            I hope this website can help you get to know me a little better!
+        </p>
+    </div>
+    
+
+    <h2 id="education">Education</h2>
+    <div class="left center">
+        <ul>
+            <li>B.Sc. in Computer Science From Reichman University - 2nd year.<ul>
+                <li>Outstanding Merit Scholarship.</li>
+                <li>Participated in Computer Science Guest-Lectures- a grade based excellence program.</li>
+            </ul></li>
+            <li>Graduated Tichon Hadash high school with great honors.</li>
+        </ul>
+    </div>
+    
+
+    <h2 id="employment">Employment</h2>
+    <div class="left center">
+        <ul>
+            <li>Customer Success & Operations Manager at Fibo - B2C fintech startup<ul>
+                <li>Operating the company's technological systems such as internal CRM, automations, databases and all the tools developed by Fibo.</li>
+                <li>Leading the operation aspects in the company and being responsible for training Customer Success & Operations employees.</li>
+                <li>Characterizing of automations and accompanying the R&D team in the process.</li>
+                <li>QA of new features- defining and investigating bugs, optimization and feature requests.</li>
+            </ul></li>
+            <li>Military service - Information Scientist, Unit 8200 and Spokesperson<ul>
+                <li>Forming  a new position and implementing it within 8200.</li>
+                <li>Spokesperson for leading units in the Intelligence Section, including 8200.</li>
+                <li>Representative of the IDF Spokesperson’s Unit in 8200 and acting as a liaison between the two units.</li>
+            </ul></li>
+            <li>Future STEP intern at Google</li>
+        </ul>
+    </div>
+    
+    <div id="hobbies">
+        <h2>Hobbies</h2>
+
+        <div class="reading">
+            <h3>Reading</h3>
+            <img class="reading-pic" id="Belle" src="pictures/hobbies/books/belle.webp" 
+                alt="Belle">
+            <img class="reading-pic" id="Michal-reads" src="pictures/hobbies/books/read.webp" 
+                alt="Michal reads">
+            <img class="reading-pic" id="Books" src="pictures/hobbies/books/books.webp" 
+                alt="Books">
+        </div>
+        
+
+        <div class="nails">
+            <h3>Getting my nails done</h3>
+            <img class="nails-pic" id="Galaxy-nails" src="pictures/hobbies/nails/galaxy.webp" alt="Galaxy nails">
+            <img class="nails-pic" id="Flowers-nails" src="pictures/hobbies/nails/flowers.webp" alt="Flowers nails">
+            <img class="nails-pic" id="Clear-nails" src="pictures/hobbies/nails/clear.webp" alt="Clear nails">
+            <img class="nails-pic" id="Marble-nails"src="pictures/hobbies/nails/marble.webp" alt="Marble effect nails">
+        </div>
+        
+        <div class="netflix">
+            <h3>Watching Netflix</h3>
+            <img class="netflix-pic" id="Derry-Girls" src="pictures/hobbies/netflix/derry-girls.webp" 
+                alt="Derry Girls">
+            <img class="netflix-pic" id="Rentals" src="pictures/hobbies/netflix/rentals.webp" 
+                alt="World's Most Amazing Vacation Rentals">
+            <img class="netflix-pic" id="Rupaul" src="pictures/hobbies/netflix/rupaul.webp" 
+               alt="Rupaul's Drag Race">
+            <img class="netflix-pic" id="Brooklyn99" src="pictures/hobbies/netflix/brook.webp" 
+                alt="Brooklyn 99">
+        </div>
+        
+        <h3>Traveling</h3>
+        <h4>I have so many things to show and tell. <br>
+            Do you want a peek to my travel journal? Go to <a href="destinations.html">my travels!</a></h4>
+    </div>
+
+    <!-- creates a contact form with fields for name, email, and message, which allows users to submit their contact information and message me  -->
+    <h2 id="contact">Contact</h2>
+    <form id="contact-form" method="post" onsubmit="return openMail(); validation();">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" class="form-control" name="message" required></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Takes the user back to the top of the page when the button is clicked -->
+    <footer>
+        <button id=top-button onclick="topFunction()">
+            To the top<span>&#8593;</span>
+        </button>
+      </footer>
+  
+</body>
+
+</html>

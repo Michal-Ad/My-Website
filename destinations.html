@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Michal Ad's travel journal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michal Ad - My Travels</title>
+    <link rel="stylesheet" type="text/css" href="destinations.css">
+    <script src="destinations.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+  </head>
+  <body>
+    <!-- Used for navigating across the site. When pressing a certain button, it will take the user to the relevant sectioon the site -->
+    <div id="navbar">
+        <ul>
+          <li><a href="index.html"><span>&#8592;</span>Home</a></li> <!-- Will take the user to the main website page -->
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#random">Need help?</a></li>
+          <li><a href="#europe">Europe</a></li>
+          <li><a href="#america">America</a></li>
+          <li><a href="#planned">My next trips</a></li>
+          <li><a href="#bucket">My bucket list</a></li>
+        </ul>
+    </div>
+
+    <h1 id="introduction">Introduction</h1>
+    <p class="text">Since I can remember myself, traveling has always been my passion.<br>
+      I remember myself at a very young age, looking at the Atlas book in my home and thinking about all the countries I'd want to visit one day. <br>
+      Here's a glimpse of my travels - places I've visited and my recommendations, my future trips and my top 5 bucket list destinations.<br>
+      Bon Voyage! 
+    </p>
+
+    <!-- when pressing the button, pick a random country and takes the user to the chosen country's section -->
+    <h2 id="random">Debating Where To Go?</h2>
+    <p class="text">Let me help! click on this button to find what should be your next destination!<br><br>
+    <button id="random-button" onclick="randomCountry()">Surprise country</button></p>
+    
+    <h2 id="europe">Europe</h2>
+    <div class="container">
+    <figure id=netherlands-pic class="country-image" onClick="toggleTextBox('netherlands')">
+        <img class="country-image" alt="The Netherlands" src="pictures/destinations/netherlands.webp">
+    </figure>
+    <div id="text-box-netherlands" class="country-text-box hidden">
+      <p>My absolute favorite. You can’t help falling in love with the architecture, culture, people and the overall chill vibe.
+        <h3>Amsterdam</h3>
+        My favorite city in the world! I keep on coming back there (9 times and counting), because it simply makes me the happiest. Here are my top recommendations:
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>Van der Linde - Incredible ice cream (some(=me) may say it's the best in the world).</li>
+          <li>Poffertjes Albert Cuyp - The best poffertjes in town. Don’t settle for less!</li>
+          <li>Café 't Smalle - A cute café on a beautiful canal, make sure to try to sit outside.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Jordaan - My favorite neighborhood in the city, what comes in my mind when you think of picturesque Amsterdam.</li>
+          <li>Bloemgracht - The most beautiful canal (and it’s a tough competition).</li>
+          <li>De Pijp - A lively neighborhood with lots of bars and restaurants.</li>
+        </ul>
+        <h3>Haarlem</h3>
+        A cute city right next to Amsterdam, and one of my favorite cities to hang out in. I love a lot of places there, like:
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>OSCAR - Cute bakery with an excellent almond croissant.</li>
+          <li>The Hive - A great Israeli (!) café with traditional Israeli food.</li>
+          <li>Coffee Habits Specialty Coffee - Good coffee and amazing sweet traits.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Windmill De Adriaan - An impressive old windmill that has been beautifully preserved.</li>
+          <li>Zuid-Kennemerland National Park - Lovely nature reserve with deers!</li>
+          <li>Haarlem beaches - beautiful, sandy beaches just 15 minutes away from the city center.</li>
+        </ul>
+        <h3>Utrecht</h3>
+        Great, big city that not a lot of Isralis know. Here are my top recommendations:
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>30ml Vredenburg - The best place for breakfast or brunch.</li>
+          <li>Saowapa - Nice little Thai restaurant a little bit outside the city center.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Canals - Utrecht has really unique looking canals! You should edicate at least a day to have a walk by them.</li>
+          <li>Pandhof van de Dom - I got there by mistake, and found a garden within a church that looks like Hogwarts!</li>
+          <li>Oudegracht - The main street that has a lot of cozy café, cute flower shops and great stores.</li>
+        </ul>
+        <br>
+      </p>  
+    </div>
+
+    <figure id=united-kingdom-pic class="country-image"onClick="toggleTextBox('united-kingdom')">
+        <img class="country-image" alt="United Kingdom" src="pictures/destinations/united kingdom.webp">
+    </figure>
+    <div id="text-box-united-kingdom" class="country-text-box hidden">
+      <p> One day I’ll definitely return to the UK for destinations like Liverpool (where my family is from), 
+        Lake District and the Scottish Highlands. Here’s where I’ve been so far:
+        <h3>London</h3>
+        London does wait for you! It's such a vibrant city with rich history, iconic landmarks, and every type of food you can think of.
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>Oree bakery - Chain with great coffee and the best chocolate croissant I’ve ever had.</li>
+          <li>The Alley - The best bubble tea I had in London (and I've tried a fair amount).</li>
+          <li>The Cheese Bar - Located in Camden Market, an entire restaurant dedicated to cheese. Do I need to say more?</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Warner Bros. Studio Tour - As a huge Harry Potter fan, it was a dream come true!</li>
+          <li>Puppy Yoga - A yoga class you're having while surrounded by a cheerful squad of puppies. It’s as amazing as it sounds.</li>
+          <li>Visiting beautiful streets - The prettiest streets I’ve found were Floral street, Goodwin’s court and Neal’s yard.</li>
+        </ul>
+        <h3>Edinburgh</h3>
+        The minute I stepped in Edinburgh, I fell in love. The view of the city is so unique and spectacular, and the people are so welcoming and nice. 
+        I highly recommend visiting this city!
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>Hula Juice Bar & Healthy Eatery - Tasty breakfast options and refreshing juices.</li>
+          <li>The Milkman - One of the coziest cafes I’ve ever seen, located in a beautiful street corner.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>The alleys - Get lost in Edinburgh! everywhere you’ll turn, you’ll probably end up in an enchanting alley with rich history.</li>
+          <li>Calton Hill - Picturesque hill that offers panoramic views of the city. You should come at sunset!</li>
+          <li>Dean Village - A charming neighborhood that looks like a fairy village.</li>
+        </ul>
+        <br>
+      </p>
+    </div>
+
+    <figure id=hungary-pic class="country-image" onClick="toggleTextBox('hungary')">
+        <img class="country-image" alt="Hungary" src="pictures/destinations/hungary.webp">
+    </figure>
+    <div id="text-box-hungary" class="country-text-box hidden">
+      <p>I had lots of fun in Budapest, Hungary's capital, when I traveled there!<br>
+        The streets are charming, and every building has its unique architecture and pieces of art on it.
+        You’ll probably end your day with neck pain from looking up so much, because you’ll want to see them all! <br> 
+        There are so many things to do and see there but my top recommendation is definitely Costes Downtown restaurant -
+        a michelin star restaurant where I had the best meal i ever had in my entire life,
+        for the price of 90 NIS for appetizer, main course and desert!</p>
+    </div>
+
+    <figure id=italy-pic class="country-image" onClick="toggleTextBox('italy')">
+        <img class="country-image" alt="Italy" src="pictures/destinations/italy.webp">
+    </figure>
+    <div id="text-box-italy" class="country-text-box hidden">
+      <p>Someday I would definitely do a north to south Italy road trip, but in the meantime, this is where I got to visit:
+        <h4>Rome</h4>
+        I’ll always have a warm place in my heart for Rome, because I traveled there the same day I finished my military service. 
+        I wish I could stay there for weeks and just keep on eating! divine ice cream, pizzas and pastas, and so many beautiful places to see.
+        <h4>Naples</h4>
+        A beautiful combination of European and Mediterranean cultures. But the real highlight of the city is of course the Neapolitan pizza. 
+        Definitely visit L'Antica Pizzeria da Michele, it’s worth the line. Protip: the line for the takeaway is shorter.
+      </p>
+    </div>
+
+    <figure id=france-pic class="country-image" onClick="toggleTextBox('france')">
+        <img class="country-image" alt="France" src="pictures/destinations/france.webp">
+    </figure>
+    <div id="text-box-france" class="country-text-box hidden">
+      <p>France has so many amazing places you can travel to, I can’t wait to explore them all! Here are my top places I've been so far:
+        <h3>Paris</h3>
+        The city of love and lights, and of course, the city of croissants :) 
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>La Maison d’Isabelle - Incredible bakery with a divine croissant, and many more delicious treats.</li>
+          <li>Cédric Grolet Opéra - A famous patisserie that’s definitely worth the (long) line.</li>
+          <li>Angelina - Their hot chocolate feels like a chocolatey dream!</li>
+          <li>THAIGER - Great Thai restaurant in the Latin quarter.</li>
+          <li>McDonald's - I’m sorry, but I've never had a better McFlurry.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Garden of the Eiffel Tower -  a great place to sit at night with a bottle of wine, watching the Eiffel tower sparkles.</li>
+          <li>Montmartre - Beautiful neighborhood with such a rich history.</li>
+          <li>The Seine - A walk along the Seine, starting from Pont Neuf, all the way to the Eiffel tower.</li>
+          <li>Canal Saint-Martin - Had so much fun eating my lunch right next to it!</li>
+        </ul>
+        <br>
+        <h4>Strasbourg and Colmar</h4>
+        Alsace, a fairy-tale looking area in East France, is a must! The area is famous for its fine wine and jams, and the beautiful towns 
+        and cities look like they were taken straight out of a Disney movie. 
+        Strasbourg, the capital of the area, is a really cute city with lots to see. I recommend spending at least a few days there. 
+        Colmar is an adorable small town right next to Strasbourg, if you’re around you should totally give it a visit!
+        <br>
+        <h4>Dijon</h4>
+        Great student city and the capital of Burgundy, with beautiful streets, great food, great wine and even great prices! 
+        Really recommended for a short stay on a budget, and if you like Dijon mustard :)
+        <br>
+        <h4>Annecy</h4>
+        The city is built around a beautiful, big lake and it has an amazing park, Jardins de l'Europe, where you can chill and look at the water. 
+        You can also visit Le Palais de I'Île, the famous building that’s right next to a cute river, and travel the lovely streets around it.
+      </p>
+    </div>
+
+    <figure id=belgium-pic class="country-image" onClick="toggleTextBox('belgium')">
+        <img class="country-image" alt="Belgium" src="pictures/destinations/belgium.webp">
+    </figure>
+    <div id="text-box-belgium" class="country-text-box hidden">
+      <p>Belgium really surprised me! It has really nice cities and a great mix of cultures.
+        The cities I visited:
+        <h4>Antwerp</h4>
+        A nice city with a rich history. I enjoyed the ferris-wheel and the beautiful parliament house with many flags, even the Israeli one!
+        <br>
+        <h4>Bruges</h4>
+        One of the most beautiful cities I've visited! feels like walking in a fairy-tale, with ancient buildings, narrow streets and tons of swans.
+        <br>
+        <h4>Brussels</h4>
+        Belgium’s capital with a lot of things to do, see and eat! I also ate there one of the best things I ate in my life- 
+        roasted shrimps in Noordzee - Mer du Nord.
+        <br>
+        </p>
+    </div>
+    
+    <figure id=austria-pic class="country-image" onClick="toggleTextBox('austria')">
+        <img class="country-image" alt="Austria" src="pictures/destinations/austria.webp">
+    </figure>
+    <div id="text-box-austria" class="country-text-box hidden">
+      <p>Beautiful country where everywhere you look, looks like a postcard!
+        <h4>Vienna</h4>
+        When you think of a classical European city- Vienna comes to mind. Clean-looking buildings and streets, with lots of cafés 
+        that were open hundreds of years ago. I strongly recommend you to come at Christmas time- the markets and the vibe are amazing!
+        <h4>Tyrol and Innsbruck, SalzburgerLandes and Salzburg</h4>
+        Two amazing areas in Austria, filled with incredible mountains, lakes, waterfalls, gorges, amazing hiking variety, cute alpine houses, 
+        and breath-taking views.<br> 
+        There aren't many things that are better than eating a schnitzel on top of a 3,000 meter mountain! 
+        </p>
+    </div>
+
+    <figure id=croatia-pic class="country-image" onClick="toggleTextBox('croatia')">
+        <img class="country-image" alt="Croatia" src="pictures/destinations/croatia.webp">
+    </figure>
+    <div id="text-box-croatia" class="country-text-box hidden">
+      <p>A country that I will definitely come back to one day, because there's so much more to discover! 
+        I was quite young when I visited in Croatia but there’s one place i will never forget:
+        <h4>Plitvice Lakes</h4>
+        A place you need to see in your own eyes to believe it’s real - it’s *that* amazing! 
+        There are more lakes and waterfalls than you can count, and the color of the water is a beautiful turquoise.
+        </p>
+    </div>
+
+    <figure id=slovenia-pic class="country-image" onClick="toggleTextBox('slovenia')">
+        <img class="country-image" alt="Slovenia" src="pictures/destinations/slovenia.webp">
+    </figure>
+    <div id="text-box-slovenia" class="country-text-box hidden">
+      <p>An enchanting small country, with stunning natural beauty. Perfect for any type of vacation you’d want! 
+        <h4>Bled Lake</h4>
+        The ultimate screensaver. Picturesque lake that has a little island in the middle of it, with a charming church. 
+        Right on the lake shore, there’s a cliff with a castle on it! It feels like somebody painted the view!
+        <h4>Vintgar Gorge</h4>
+        If you’re looking for a light walk, with amazing views - that’s definitely a good option. 
+        The color of the water is breathtaking, and the sound of the water flow is so nice.
+      </p>
+    </div>
+
+    <figure id=czech-republic-pic class="country-image" onClick="toggleTextBox('czech-republic')">
+        <img class="country-image" alt="Czech Republic" src="pictures/destinations/czech republic.webp">
+    </figure>
+    <div id="text-box-czech-republic" class="country-text-box hidden">
+      <p><h4>Prague</h4>
+        A great city for every type of vacation, that has a lot to offer! My most memorable memories from there:
+        <ul>
+          <li>Golden lane - A (literally) little street. Very cute!</li>
+          <li>Vodní nádrž Džbán- Nice lake for the warm days, and great to have a walk around.</li>
+          <li>Muzeum Cokolad - Chocolate museum that wasn’t really interesting, but the chocolate was great :)</li>
+        </ul>
+        <h4>Kroměříž</h4>
+        A little town next to Brno, where I stayed during student exchange in high school. 
+        Nice Historical sites around, cute looking buildings and amazing people!
+      </p>
+    </div>
+
+    <figure id=denmark-pic class="country-image" onClick="toggleTextBox('denmark')">
+        <img class="country-image" alt="Denmark" src="pictures/destinations/denmark.webp">
+    </figure>
+    <div id="text-box-denmark" class="country-text-box hidden">
+      <p>My first time traveling solo was in Copenhagen - and it was amazing! Here are some spots I loved:
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>TorvehallerneKBH - The only place you need basically. Great prices, even greater food!</li>
+          <li>Little Brother - Amazing Italian food, I highly recommend the white pizza.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>The Christiansborg's Towe r- Great view for the whole city! and it’s free :)</li>
+          <li>Ørstedsparken - I went to that park every day, it’s a great place to hang out at.</li>
+          <li>Freetown Christiania - Unique neighborhood with a hippie vibe.</li>
+          <li>Larsbjørnsstræde - My favorite street with lots of vintage stores.</li>
+        </ul>
+    </div>
+
+    <figure id=finland-pic class="country-image" onClick="toggleTextBox('finland')">
+      <img class="country-image" alt="Finland" src="pictures/destinations/finland.webp">
+    </figure>
+    <div id="text-box-finland" class="country-text-box hidden">
+      <p>I came back from Finland just a few hours before the first covid quarantine started, and boy, was I lucky
+        I got to experience this country!<br>
+        I was traveling in the north of Finland, in Lapland, And it was a true winter wonderland!<br>
+        Tons of snow and snowy forests, frozen waterfalls, dogsled, reindeer sled, racing in a race track made out of snow, 
+        visiting the north pole and Santa's village, and of course, watching the northern lights (twice!).<br> 
+        If possible, I really recommend sleeping in a glass igloo - it’s such a unique experience!</p>
+    </div>
+
+    <figure id=germany-pic class="country-image" onClick="toggleTextBox('germany')">
+      <img class="country-image" alt="Germany" src="pictures/destinations/germany.webp">
+    </figure>
+    <div id="text-box-germany" class="country-text-box hidden">
+      <p>Germany is such a big country with lots to see. Here are some places I visited and enjoyed:
+        <h3>Berlin</h3>
+        The city of uniqueness (and Milky). Here are my top choices: 
+        <h4>Places to eat:</h4>
+        <ul>
+          <li>The Bird - Amazing burgers! pretty far from the center but it’s totally worth it.</li>
+          <li>Roamers - Great place for brunch, the pancakes are highly recommended!</li>
+          <li>House of Small Wonder - Japanese-inspired café with cute design and great food and drinks.</li>
+        </ul>
+        <h4>What to see:</h4>
+        <ul>
+          <li>Hackescher Markt - Fun area to explore with inner gardens and art.</li>
+          <li>Klunkerkranich - The entire city is spread in front of you, while you can listen to live shows!</li>
+          <li>Stadtgericht - Looks like a pretty ordinary building from the outside, but once you get in you’ll find beautiful architecture!</li>
+        </ul>
+        <br>
+        <h4>Baden Baden</h4>
+        Its name literally means “Bath Bath”. A great city for a short, relaxed getaway that’s in the middle of the black forest. 
+        It has some really nice Baths (the name of the city implies that…) and it’s really nice to walk along the beautiful river that crosses the city. 
+        A really cool thing you can do there is a race track where you can drive a Porsche, Lamborghini or another fancy sports car. Afterwards, the car is yours for the day.
+        <br>
+        <h4>South of Germany </h4>
+        Right next to the border with Austria, Germany has amazing places to hike and travel. 
+        Lakes like Königssee and Walchensee are amazing for a nice visit to nature.
+      </p>
+    </div>
+
+    <figure id=spain-pic class="country-image" onClick="toggleTextBox('spain')">
+      <img class="country-image" alt="Spain" src="pictures/destinations/spain.webp">
+    </figure>
+    <div id="text-box-spain" class="country-text-box hidden">
+      <p>In Spain I've only been in Barcelona, but staying there, I already fell in love with the Spanish culture.
+        I Celebrated new year’s eve in Barcelona, and it was so much fun, they really know how to party!<br> 
+        I highly recommend visiting there, seeing the unique architecture and tasting the incredible food.</p>
+    </div>
+    </div>
+
+    <h2 id="america">America</h2>
+    <div class="container">
+
+    <figure id=peru-pic class="country-image" onClick="toggleTextBox('peru')">
+        <img class="country-image" alt="Peru" src="pictures/destinations/peru.webp">
+    </figure>
+    <div id="text-box-peru" class="country-text-box hidden">
+      <p>I spent a month and a half in Peru and it was an absolute blast. I had so many fun moments there and I made memories that warm my heart 
+        everytime I think of them. The culture, the breathtaking views of the Andes, and of course, the Machu Picchu, all made my time in Peru 
+        such an amazing experience! Here are some of the places I visited:</p>
+        <h4>Cusco</h4>
+        My favorite city in Peru. Surrounded by beautiful nature and lots of things to see, do and explore, so you’ll never get bored! 
+        From there you can travel to Machu Picchu and the Rainbow Mountain. 
+        It also has an incredible culinary scene, my favorites were Café Dwasi and La Bodega 138.
+        <br>
+        <h4>Valle Sagrado</h4>
+        Beautiful rural area. A green valley with small towns, where you can find yoga classes and vegan food, next to incredible Inca sites.
+        <br>
+        <h4>Huaraz</h4>
+        The city is known for being a base for trekking. While staying there, I visited Laguna Paron, Laguna 69, Pastoruri glacier and did an 
+        8-days trek, the Huayhuash trail. 
+        <br>
+        <h4>Huacachina</h4>
+        A true oasis! A cute town with a lake in the middle of the desert, where you can take a dune buggy tour and sandboarding.
+    </div>
+
+    <figure id=panama-pic class="country-image" onClick="toggleTextBox('panama')">
+          <img class="country-image" alt="Panama" src="pictures/destinations/panama.webp">
+    </figure>
+    <div id="text-box-panama" class="country-text-box hidden">
+      <p>It was my last destination in my big trip before university, and it was a great destination to finish my trip with! 
+        The amazing beaches and jungles there really eased my soul and made me feel very calm and happy. Here are some places I’ve enjoyed:
+        <h4>Panama City</h4>
+        Cool city with stunning skyline, and a lot of things to do. I enjoyed walking around and eating at local cafés and American chains 
+        (it was my first time trying Krispy Kreme and I loved it!).
+        <h4>Bocas del Toro Archipelago</h4>
+        Amazing islands that combine stunning beaches with abundant jungles. My favorite islands were Bastimentos island (red frog island), 
+        Zapatilla island and Colón island (the main island).
+        <h4>El Valle de Anton</h4>
+        Beautiful mountain town with lots of nature around and a great variety of hikes.
+        <h4>San Blas Islands</h4>
+        I was staying on one of the islands for 2 days- and it was completely isolated! It was just me and 4 more people and one local family, 
+        with no reception or functioning utilities. I was there by myself and all I did was swim in the turquoise sea or read a book at the beach. 
+        It was so relaxing!
+      </p>
+    </div>
+
+    <figure id=ecuador-pic class="country-image" onClick="toggleTextBox('ecuador')">
+        <img class="country-image" alt="Ecuador" src="pictures/destinations/ecuador.webp">
+    </figure>
+    <div id="text-box-ecuador" class="country-text-box hidden">
+      <p>In Ecuador I had the most amazing experience I’ve ever had- discovering the underwater world in The Galapagos islands.<br>
+        Every time I entered the water I felt like i’m in  a dream - tons of colorful fish, giant turtles, starfish, sea lions and so many more exotic animals.<br>
+        I even got to swim with sharks, and saw a whale and some penguins!
+        </p>
+    </div>
+
+  </div>
+
+  <h2 id="planned">My Next Trips</h2>
+  <div class="container">
+    <figure id=portugal-pic class="country-image" onClick="toggleTextBox('portugal')">
+        <img class="country-image" alt="Portugal" src="pictures/destinations/portugal.webp">
+    </figure>
+    <div id="text-box-portugal" class="country-text-box hidden">
+      <p>I am so excited to visit Madeira, Portugal, very soon! It is a small archipelago in the north Atlantic ocean, and it looks so scenic.
+        Some call it “the Hawaii of Europe”.<br> 
+        Top 5 things I’m planning to do:  
+        <ul>
+          <li>Piscinas Naturais do Seixal</li>
+          <li>Miradouro de São Lourenço</li>
+          <li>Cascata dos Anjos</li>
+          <li>Miradouro do Véu da Noiva</li>
+          <li>Pico do Arieiro</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <h2 id="bucket">My Bucket List</h2>
+  <div class="container">
+
+  <figure id=norway-pic class="country-image" onClick="toggleTextBox('norway')">
+      <img class="country-image" alt="Norway" src="pictures/destinations/norway.webp">
+  </figure>
+  <div id="text-box-norway" class="country-text-box hidden">
+    <p>I dreamt of seeing the country of fjords since I can remember myself! Here are my top 5 places I want to visit while there:
+      <ul>
+        <li>Lofoten islands</li>
+        <li>Trolltunga</li>
+        <li>The Geiranger Fjord and the Seven Sisters waterfall</li>
+        <li>Friaren waterfall</li>
+        <li>Bergen</li>
+      </ul>
+    </p>
+  </div>
+
+  <figure id=antarctica-pic class="country-image" onClick="toggleTextBox('antarctica')">
+      <img class="country-image" alt="Antarctica" src="pictures/destinations/antarctica.webp">
+  </figure>
+  <div id="text-box-antarctica" class="country-text-box hidden">
+    <p>One word - penguins :)</p>
+  </div>
+
+  <figure id=indonesia-pic class="country-image" onClick="toggleTextBox('indonesia')">
+      <img class="country-image" alt="Indonesia" src="pictures/destinations/indonesia.webp">
+  </figure>
+  <div id="text-box-indonesia" class="country-text-box hidden">
+    <p>The number one on my list, I’m definitely planning to pay a visit soon! Here are my top 5 places I want to visit while there:
+      <ul>
+        <li>Gunung Bromo mountain</li>
+        <li>Bali</li>
+        <li>Komodo island</li>
+        <li>Kalimantan island</li>
+        <li>Lake Toba</li>
+      </ul>
+    </p>
+  </div>
+
+  <figure id=south-africa-pic class="country-image" onClick="toggleTextBox('south-africa')">
+      <img class="country-image" alt="South Africa" src="pictures/destinations/south-africa.webp">
+  </figure>
+  <div id="text-box-south-africa" class="country-text-box hidden">
+    <p>From what I’ve heard, this country offers such a wide range of natural beauty and urban life!
+      Here are my top 5 places I want to visit while there:
+      <ul>
+        <li>Cape Town and Maclear's Beacon</li>
+        <li>Simon's Town (penguins!)</li>
+        <li>Victoria Falls</li>
+        <li>Kruger National Park</li>
+        <li>Garden Route</li>
+      </ul>
+    </p>
+  </div>
+
+  <figure id=iceland-pic class="country-image" onClick="toggleTextBox('iceland')">
+    <img class="country-image" alt="iceland" src="pictures/destinations/iceland.webp">
+  </figure>
+  <div id="text-box-iceland" class="country-text-box hidden">
+    <p>Every time I see a picture of Iceland, it takes my breath away! Here are my top 5 places I want to visit while there:
+      <ul>
+        <li>Skogafoss waterfall</li>
+        <li>Skaftafell nature reserve and Jokulsarlon</li>
+        <li>Godafoss waterfall</li>
+        <li>Dyrholaey</li>
+        <li>Snæfellsnes</li>
+      </ul>
+    </p>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- Takes the user back to the top of the page when the button is clicked -->
+  <footer>
+    <button id=top-button onclick="topFunction()">
+        To the top<span>&#8593;</span>
+    </button>
+  </footer>  
+    
+  </body>
+  
+</html>
